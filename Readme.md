@@ -1,4 +1,3 @@
-
 # **Debasmit Roy**
 
 📍 Pune, India
@@ -180,3 +179,9 @@ In the recent years, I along with my team won numerous contests and hackathons o
 * [Hyperparameter Tuning, Regularization and Optimization](https://coursera.org/share/8f767f28d4929867dec72864966adf55)
 
 ---
+
+## **Hobbies & Interests**
+
+* Playing piano and Indian key-based instruments. Trained in **Indian Classical** music and **Rabindra Sangeet**.
+* Reading Indian, especially **Bengali Novels**.
+* Collaborating with juniors and seniors to build new, **innovative solutions**.
