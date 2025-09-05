@@ -4,7 +4,7 @@
 📧 **Email:** [DDRUk2018@gmail.com](mailto:DDRUk2018@gmail.com)
 🔗 [Google Scholar](https://scholar.google.co.in/citations?user=Ovrj4IMAAAAJ&hl=en)
 🔗 [LinkedIn](https://www.linkedin.com/in/debasmit-roy-b21a1a183/)
-
+🔗 [Github](https://github.com/DEBASMITROY2002)
 ---
 
 ## **Research**
