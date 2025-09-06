@@ -84,7 +84,7 @@ The overall framework is found to be effective when evaluated on two widely used
 
 1. **2023 Summer – Internship at Deutsche India Private Limited (Deutsche Bank) Technology, Data & Innovation Division as Software Engineer**
 
-   * Worked on developing an **end-to-end sophisticated ChatBot** with Flask backend and React front-end with integrated LangChain framework for conversational memory.
+   * Worked on developing an **end-to-end sophisticated ChatBot** with Flask backend and React front-end with integrated LangChain framework for conversational memory on the top of an extrememly noisy and unstructured internal data stream.
    * Implemented **context search algorithms** and **dynamic knowledge base expansion** using cutting-edge NLP models, resulting in highly efficient information retrieval from internal company database and pages.
      📄 [Proof](https://drive.google.com/file/d/11UQK7p0Yb0NT8yfrmtl4YzUOvnwRGQY7/view?usp=drive_link)
 
