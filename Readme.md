@@ -9,7 +9,7 @@
 
 ## **Research**
 
-Currently, I am working on **Network Pruning in ViT** and the **Incremental Learning problem**. Apart from that I have a good level of research expertise in **Knowledge Distillation, Vision Language Models and Neural Representation Learning**.
+I have expertise in **Knowledge Distillation, Vision-Language Models, Neural Representation Learning, and Attention-based Frameworks**. I have also learnt some core topics from **Generative Adversarial Learning and Reinforcement Learning** from different courses. At present, I am studying **Network Pruning in Vision Transformers (ViT)** and the **Incremental Learning problem**, where I am studying how to make models more efficient and adaptable. In the future, I would like to go deeper into the **Vision-Language domain** and also explore **Geometrical Deep Learning** as part of my research.
 
 Here are some of my published (and accepted) research works.
 
@@ -30,7 +30,7 @@ Extensive experiments on popular skin cancer datasets (**ISIC-17, ISIC-18 and IS
 
 ---
 
-### 2. **Multi-headed Graph-Based Attention Aided U-Net Model for Nuclei Segmentation** \[Third Author]
+### 2. **Multi-headed Graph-Based Attention Aided U-Net Model for Nuclei Segmentation** 
 
 **International Conference on Neural Information Processing 2024**
 
