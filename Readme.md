@@ -26,7 +26,7 @@ We propose the **Background-Invariant Independence-Guided Multi-head Attention N
 Additionally, a **saliency-driven mechanism** suppresses background activations by selectively shuffling non-salient vectors, preventing the model from relying on static background cues. By integrating these strategies, BIIGMA-Net improves robustness against spurious background noise while ensuring complementary feature extraction.
 
 Extensive experiments on popular skin cancer datasets (**ISIC-17, ISIC-18 and ISIC-19**) demonstrate the framework's effectiveness and robustness.
-📄 [Paper Link](https://drive.google.com/file/d/1E0f2qpsHApyk5glfeFvOBOTnbclWJeuy/view?usp=drive_link)
+📄 [Paper Link](https://papers.miccai.org/miccai-2025/paper/2868_paper.pdf)
 
 ---
 
