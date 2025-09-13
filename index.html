@@ -9,6 +9,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <nav class="scroll-nav">
+        <ul>
+            <li><a href="#about"><span>About Me</span></a></li>
+            <li><a href="#research"><span>Research</span></a></li>
+            <li><a href="#experience-education"><span>Career & Education</span></a></li>
+            <li><a href="#university-days"><span>University Days</span></a></li>
+            <li><a href="#hackathons"><span>Contests and Hackathons</span></a></li>
+            <li><a href="#school"><span>Academic Foundations</span></a></li>
+            <li><a href="#skills"><span>Skills</span></a></li>
+            <li><a href="#hobbies"><span>Hobbies</span></a></li>
+        </ul>
+    </nav>
     <div class="container">
         <header class="glass-card">
             <div class="profile-header">
@@ -239,6 +251,29 @@
             <p>&copy; 2025 Debasmit Roy. All rights reserved.</p>
         </footer>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.scroll-nav a');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        navLinks.forEach(link => {
+                            link.classList.remove('active');
+                            if (link.getAttribute('href').substring(1) === entry.target.id) {
+                                link.classList.add('active');
+                            }
+                        });
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
 </body>
 </html>
 
