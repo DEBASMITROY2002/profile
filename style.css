@@ -1,5 +1,6 @@
 /* --- Fonts & Global Styles --- */
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 :root {
     --primary-color: #c77b79; /* Brighter Muted Red/Brown */
@@ -347,6 +348,37 @@ header {
     border-bottom: none;
 }
 
+/* --- Keywords & Skills --- */
+.keyword-past {
+    background: rgba(90, 90, 90, 0.15);
+    color: #5a5a5a;
+    border: 1px solid rgba(90, 90, 90, 0.2);
+}
+
+.keyword-present {
+    background: rgba(38, 139, 210, 0.15);
+    color: #268bd2;
+    border: 1px solid rgba(38, 139, 210, 0.3);
+    animation: glowing-present 2s infinite ease-in-out;
+}
+
+.keyword-future {
+    background: rgba(133, 153, 0, 0.15);
+    color: #859900;
+    border: 1px solid rgba(133, 153, 0, 0.3);
+}
+
+@keyframes glowing-present {
+    0%, 100% {
+        box-shadow: 0 0 4px rgba(38, 139, 210, 0.2);
+        transform: scale(1.02);
+    }
+    50% {
+        box-shadow: 0 0 12px rgba(38, 139, 210, 0.6);
+        transform: scale(1.02);
+    }
+}
+
 .keyword, .honours-subjects, .keyword-skill {
     background-color: var(--border-color);
     color: var(--text-color);
@@ -356,13 +388,38 @@ header {
     font-size: 0.9rem;
     display: inline-block;
     transition: all 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    animation: glowing-keyword 2.5s infinite ease-in-out;
 }
 
 .keyword:hover, .honours-subjects:hover, .keyword-skill:hover {
-    background-color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+@keyframes glowing-keyword {
+    0%, 100% {
+        box-shadow: 0 0 3px var(--shadow-color);
+    }
+    50% {
+        box-shadow: 0 0 8px var(--shadow-color);
+    }
+}
+
+.keyword-past:hover {
+    background: #5a5a5a;
     color: #fff;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-    animation: glowing-keyword 1.5s infinite ease-in-out;
+}
+
+.keyword-present:hover {
+    background: #268bd2;
+    color: #fff;
+}
+
+.keyword-future:hover {
+    background: #859900;
+    color: #fff;
 }
 
 /* --- Hobbies Section --- */
