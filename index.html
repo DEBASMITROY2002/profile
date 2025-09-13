@@ -9,268 +9,307 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <nav class="scroll-nav">
-        <ul>
-            <li><a href="#about"><span>About Me</span></a></li>
-            <li><a href="#research"><span>Research</span></a></li>
-            <li><a href="#experience-education"><span>Career & Education</span></a></li>
-            <li><a href="#university-days"><span>University Days</span></a></li>
-            <li><a href="#hackathons"><span>Contests and Hackathons</span></a></li>
-            <li><a href="#school"><span>Academic Foundations</span></a></li>
-            <li><a href="#skills"><span>Skills</span></a></li>
-            <li><a href="#hobbies"><span>Hobbies</span></a></li>
-        </ul>
-    </nav>
-    <div class="container">
-        <header class="glass-card">
-            <div class="profile-header">
-                <img src="assets/dp.png" alt="Debasmit Roy" class="profile-pic">
-                <div class="header-text">
-                    <h1>Debasmit Roy</h1>
-                    <p>📍 Pune, India</p>
-                    <div class="contact-links">
-                        <a href="mailto:ddruk2018@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-                        <a href="https://scholar.google.co.in/citations?user=Ovrj4IMAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
-                        <a href="https://www.linkedin.com/in/debasmit-roy-b21a1a183/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                        <a href="https://github.com/DEBASMITROY2002" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <main>
-            <section id="about" class="glass-card">
-                <h2><i class="fas fa-user"></i> About Me</h2>
-                <p>I am a <span class="keyword">Software Engineer</span> specializing in <span class="keyword">DevOps</span>, <span class="keyword">Cloud technologies</span>, and <span class="keyword">Artificial Intelligence</span>. As a dedicated <span class="keyword">Deep Learning researcher</span>, my work has been published in prestigious, top-tier venues, including the <span class="keyword">A* conference MICCAI 2025</span>. I maintain a deeply hands-on approach to both engineering and research, constantly exploring new frontiers and building innovative systems. My passion for problem-solving is further demonstrated by multiple wins in international hackathons, particularly in the field of <span class="keyword">Generative AI</span>.</p>
-            </section>
-            <section id="research" class="glass-card">
-                <h2><i class="fas fa-flask"></i> Research</h2>
-                <p>I have expertise in <span class="keyword keyword-past">Knowledge Distillation</span>, <span class="keyword keyword-past">Vision-Language Models</span>, <span class="keyword keyword-past">Neural Representation Learning</span>, and <span class="keyword keyword-past">Attention-based Frameworks</span>. I have also learnt some core topics from <span class="keyword keyword-past">Generative Adversarial Learning</span> and <span class="keyword keyword-past">Reinforcement Learning</span> from different courses. At present, I am studying <span class="keyword keyword-present">Network Pruning in Vision Transformers (ViT)</span> and the <span class="keyword keyword-present">Incremental Learning problem</span>, where I am studying how to make models more efficient and adaptable. In the future, I would like to go deeper into the <span class="keyword keyword-future">Vision-Language domain</span> and also explore diverse topics like <span class="keyword keyword-future">Geometrical Deep Learning</span>, <span class="keyword keyword-future">Self-Supervised Learning</span> etc as part of my research.</p>
-                <h3>Published Works</h3>
-                <div class="publications">
-                    <article class="publication">
-                        <h4>1. Background-Invariant Independence-Guided Multi-head Attention Network for Skin Lesion Classification [First Author]</h4>
-                        <p><strong>MICCAI 2025 (International Conference on Medical Image Computing and Computer Assisted Intervention)</strong></p>
-                        <p>Biomedical image classification faces several adversarial challenges, including occlusions from artifacts, variations in tissue pigmentation, and class imbalance, which hinder model generalization. Existing attention mechanisms enhance region localization but often introduce redundant dependencies across attention heads, limiting feature diversity.</p>
-                        <p>We propose the <span class="keyword">Background-Invariant Independence-Guided Multi-head Attention Network (BIIGMA-Net)</span> to address these issues. BIIGMA-Net employs <span class="keyword">Multi-head Independence-Guided Channel Attention (MICA)</span>, where each head independently learns feature importance while enforcing neuron-wise independence using the <span class="keyword">Hilbert-Schmidt Independence Criterion (HSIC)</span> to enhance feature diversity.</p>
-                        <p>Additionally, a <span class="keyword">saliency-driven mechanism</span> suppresses background activations by selectively shuffling non-salient vectors, preventing the model from relying on static background cues. By integrating these strategies, BIIGMA-Net improves robustness against spurious background noise while ensuring complementary feature extraction.</p>
-                        <p>Extensive experiments on popular skin cancer datasets (<strong>ISIC-17, ISIC-18 and ISIC-19</strong>) demonstrate the framework's effectiveness and robustness.</p>
-                        <a href="https://papers.miccai.org/miccai-2025/paper/2868_paper.pdf" class="paper-link" target="_blank">📄 Paper Link</a>
-                    </article>
-                    <article class="publication">
-                        <h4>2. Multi-headed Graph-Based Attention Aided U-Net Model for Nuclei Segmentation </h4>
-                        <p><strong>International Conference on Neural Information Processing 2024</strong></p>
-                        <p>Accurate segmentation of nuclei in histopathology images is critical for understanding tissue morphology and aiding in disease diagnosis, particularly cancer. We propose a novel approach that integrates a <span class="keyword">graph-based attention mechanism into the U-Net architecture</span>, utilizing a state-of-the-art encoder and a <span class="keyword">Pairwise Node Similarity Attention Module (PNSAM)</span>. This enhances relationships between feature vectors, and a <span class="keyword">channel pruning mechanism</span> selects important channels for the graph attention map. The resulting map, combined with features from multiple trainable heads, generates a more diverse and robust feature map, outperforming state-of-the-art approaches on <strong>Monuseg, TNBC, and CryoNuSeg</strong> datasets.</p>
-                        <a href="https://link.springer.com/chapter/10.1007/978-981-96-6688-1_16" class="paper-link" target="_blank">📄 Paper Link</a>
-                    </article>
-                    <article class="publication">
-                        <h4>3. Margin-Aware Adaptive-Weighted-Loss for Deep Learning Based Imbalanced Data Classification [First Author]</h4>
-                        <p><strong>IEEE Transactions on Artificial Intelligence · May 11, 2023</strong></p>
-                        <p>To address class imbalance and overfitting, we propose a novel loss function, <span class="keyword">Margin-Aware Adaptive-Weighted (MAAW) Loss</span>. It uses <span class="keyword">large margin softmax</span> for intra-class compactness and inter-class separability, and a <span class="keyword">dynamically weighted loss</span> that adapts based on inverse class frequencies in each minibatch. It also accounts for hard-to-train samples using confidence scores. The framework proved effective on <strong>CIFAR-10, Fashion-MNIST, HAM10000, and APTOS-2019 BD</strong> datasets.</p>
-                        <a href="https://ieeexplore.ieee.org/abstract/document/10123019/" class="paper-link" target="_blank">📄 Paper Link</a>
-                    </article>
-                </div>
-            <p>📌 I was also invited to the <strong>prestigious IndoML Symposium 2024 at IIT Bombay</strong>, where I interacted with researchers and professors across the globe.</p>
-            </section>
-
-            <section id="experience-education" class="glass-card">
-                <h2><i class="fas fa-chart-line"></i> Career & Education</h2>
-                <div class="timeline">
-                    <!-- Work Experience Item 1 -->
-                    <div class="timeline-item">
-                        <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
-                        <div class="timeline-content category-nlp">
-                            <h3>Software Engineer (June 2024 – Present)</h3>
-                            <h4>Deutsche India Pvt. Ltd. – Risk, Finance & Treasury</h4>
-                            <ul>
-                                <li>Key role in <span class="keyword">Cloud and DevOps technology</span> using <span class="keyword">GCP</span>, <span class="keyword">Kubernetes</span>, <span class="keyword">SRE tools</span>, and <span class="keyword">CI/CD pipelines</span>.</li>
-                                <li>Serve as a key person in the department’s <span class="keyword">innovation track</span>, working on complex <span class="keyword">Explainable AI pipelines</span>.</li>
-                                <li>Built an <span class="keyword">NLP/LLM pipeline</span> to explain financial movements of derivatives.</li>
-                                <li>Developing an <span class="keyword">LLM-powered platform</span> to analyze Cloud log and metric anomalies.</li>
-                                <li>Represented department’s AI contributions at internal forums.</li>
-                            </ul>
-                            <a href="https://drive.google.com/file/d/1fDIe6jxrXvUuXhNfUr11RorrYoGwJjgn/view?usp=drive_link" class="proof-link" target="_blank">📄 Certificate</a>
-                        </div>
-                    </div>
-                     <!-- Work Experience Item 2 -->
-                    <div class="timeline-item">
-                        <div class="timeline-icon"><i class="fas fa-user-graduate"></i></div>
-                        <div class="timeline-content category-nlp">
-                            <h3>Summer Intern (2023)</h3>
-                            <h4>Deutsche India Pvt. Ltd. – Technology, Data & Innovation</h4>
-                            <ul>
-                                <li>Built an <span class="keyword">end-to-end chatbot</span> with <span class="keyword">Flask</span> (backend) and <span class="keyword">React</span> (frontend) on the top of an extremely noisy and unstructured internal data stream.</li>
-                                <li>Implemented <span class="keyword">context search algorithms</span> and <span class="keyword">dynamic knowledge base expansion</span> on the top of language models running with limited resources. </li>
-                            </ul>
-                            <a href="https://drive.google.com/file/d/11UQK7p0Yb0NT8yfrmtl4YzUOvnwRGQY7/view?usp=drive_link" class="proof-link" target="_blank">📄 Certificate</a>
-                        </div>
-                    </div>
-                    <!-- Education Item -->
-                    <div class="timeline-item">
-                        <div class="timeline-icon"><i class="fas fa-university"></i></div>
-                        <div class="timeline-content">
-                            <h3>Jadavpur University, Kolkata (2024)</h3>
-                            <p><strong>Bachelors of Computer Science and Engineering</strong> with <strong>9.23 CGPA (9.30 SGPA)</strong> - First Class Distinction with Honours.</p>
-                            <ul>
-                                <li>Secured <strong>4th merit position</strong> in the department. <a href="https://drive.google.com/file/d/1LSaTNxYV3z-DMX039-wadxn-GK2bf3D8/view?usp=drive_link" target="_blank">📄 Transcript</a></li>
-                                <li>Worked at <strong>CMATER Lab</strong> under <strong>Prof. Ram Sarkar</strong> as an undergraduate researcher.</li>
-                            </ul>
+    <div class="page-wrapper">
+        <nav class="scroll-nav">
+            <ul>
+                <li><a href="#about"><span>About Me</span></a></li>
+                <li><a href="#research"><span>Research</span></a></li>
+                <li><a href="#experience-education"><span>Career & Education</span></a></li>
+                <li><a href="#university-days"><span>University Days</span></a></li>
+                <li><a href="#hackathons"><span>Contests and Hackathons</span></a></li>
+                <li><a href="#school"><span>Academic Foundations</span></a></li>
+                <li><a href="#skills"><span>Skills</span></a></li>
+                <li><a href="#hobbies"><span>Hobbies</span></a></li>
+            </ul>
+            <div id="dynamic-summary" class="summary-box"></div>
+        </nav>
+        <div class="container">
+            <header class="glass-card">
+                <div class="profile-header">
+                    <img src="assets/dp.png" alt="Debasmit Roy" class="profile-pic">
+                    <div class="header-text">
+                        <h1>Debasmit Roy</h1>
+                        <p>📍 Pune, India</p>
+                        <div class="contact-links">
+                            <a href="mailto:ddruk2018@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+                            <a href="https://scholar.google.co.in/citations?user=Ovrj4IMAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+                            <a href="https://www.linkedin.com/in/debasmit-roy-b21a1a183/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                            <a href="https://github.com/DEBASMITROY2002" target="_blank"><i class="fab fa-github"></i> GitHub</a>
                         </div>
                     </div>
                 </div>
-            </section>
+            </header>
 
-            <section id="university-days" class="glass-card">
-                <h2><i class="fas fa-graduation-cap"></i> University Days</h2>
-                <div class="university-grid">
-                    <div class="university-item">
-                        <div class="uni-icon"><i class="fas fa-medal"></i></div>
-                        <h3>Academics & Rank</h3>
-                        <p>Completed B.E. in Computer Science and Engineering with <span class="keyword">9.23 CGPA (9.30 SGPA)</span>, earning <span class="keyword">First Class Distinction with Honours</span> and securing the <span class="keyword">4th merit position</span> in the department.</p>
-                        <a href="https://drive.google.com/file/d/1LSaTNxYV3z-DMX039-wadxn-GK2bf3D8/view?usp=drive_link" class="uni-link" target="_blank">📄 Certificate</a>
+            <main>
+                <section id="about" class="glass-card">
+                    <h2><i class="fas fa-user"></i> About Me</h2>
+                    <p>I am a <span class="keyword">Software Engineer</span> specializing in <span class="keyword">DevOps</span>, <span class="keyword">Cloud technologies</span>, and <span class="keyword">Artificial Intelligence</span>. As a dedicated <span class="keyword">Deep Learning researcher</span>, my work has been published in prestigious, top-tier venues, including the <span class="keyword">A* conference MICCAI 2025</span>. I maintain a deeply hands-on approach to both engineering and research, constantly exploring new frontiers and building innovative systems. My passion for problem-solving is further demonstrated by multiple wins in international hackathons, particularly in the field of <span class="keyword">Generative AI</span>.</p>
+                </section>
+                <section id="research" class="glass-card">
+                    <h2><i class="fas fa-flask"></i> Research</h2>
+                    <p>I have expertise in <span class="keyword keyword-past">Knowledge Distillation</span>, <span class="keyword keyword-past">Vision-Language Models</span>, <span class="keyword keyword-past">Neural Representation Learning</span>, and <span class="keyword keyword-past">Attention-based Frameworks</span>. I have also learnt some core topics from <span class="keyword keyword-past">Generative Adversarial Learning</span> and <span class="keyword keyword-past">Reinforcement Learning</span> from different courses. At present, I am studying <span class="keyword keyword-present">Network Pruning in Vision Transformers (ViT)</span> and the <span class="keyword keyword-present">Incremental Learning problem</span>, where I am studying how to make models more efficient and adaptable. In the future, I would like to go deeper into the <span class="keyword keyword-future">Vision-Language domain</span> and also explore diverse topics like <span class="keyword keyword-future">Geometrical Deep Learning</span>, <span class="keyword keyword-future">Self-Supervised Learning</span> etc as part of my research.</p>
+                    <h3>Published Works</h3>
+                    <div class="publications">
+                        <article class="publication">
+                            <h4>1. Background-Invariant Independence-Guided Multi-head Attention Network for Skin Lesion Classification [First Author]</h4>
+                            <p><strong>MICCAI 2025 (International Conference on Medical Image Computing and Computer Assisted Intervention)</strong></p>
+                            <p>Biomedical image classification faces several adversarial challenges, including occlusions from artifacts, variations in tissue pigmentation, and class imbalance, which hinder model generalization. Existing attention mechanisms enhance region localization but often introduce redundant dependencies across attention heads, limiting feature diversity.</p>
+                            <p>We propose the <span class="keyword">Background-Invariant Independence-Guided Multi-head Attention Network (BIIGMA-Net)</span> to address these issues. BIIGMA-Net employs <span class="keyword">Multi-head Independence-Guided Channel Attention (MICA)</span>, where each head independently learns feature importance while enforcing neuron-wise independence using the <span class="keyword">Hilbert-Schmidt Independence Criterion (HSIC)</span> to enhance feature diversity.</p>
+                            <p>Additionally, a <span class="keyword">saliency-driven mechanism</span> suppresses background activations by selectively shuffling non-salient vectors, preventing the model from relying on static background cues. By integrating these strategies, BIIGMA-Net improves robustness against spurious background noise while ensuring complementary feature extraction.</p>
+                            <p>Extensive experiments on popular skin cancer datasets (<strong>ISIC-17, ISIC-18 and ISIC-19</strong>) demonstrate the framework's effectiveness and robustness.</p>
+                            <a href="https://papers.miccai.org/miccai-2025/paper/2868_paper.pdf" class="paper-link" target="_blank">📄 Paper Link</a>
+                        </article>
+                        <article class="publication">
+                            <h4>2. Multi-headed Graph-Based Attention Aided U-Net Model for Nuclei Segmentation </h4>
+                            <p><strong>International Conference on Neural Information Processing 2024</strong></p>
+                            <p>Accurate segmentation of nuclei in histopathology images is critical for understanding tissue morphology and aiding in disease diagnosis, particularly cancer. We propose a novel approach that integrates a <span class="keyword">graph-based attention mechanism into the U-Net architecture</span>, utilizing a state-of-the-art encoder and a <span class="keyword">Pairwise Node Similarity Attention Module (PNSAM)</span>. This enhances relationships between feature vectors, and a <span class="keyword">channel pruning mechanism</span> selects important channels for the graph attention map. The resulting map, combined with features from multiple trainable heads, generates a more diverse and robust feature map, outperforming state-of-the-art approaches on <strong>Monuseg, TNBC, and CryoNuSeg</strong> datasets.</p>
+                            <a href="https://link.springer.com/chapter/10.1007/978-981-96-6688-1_16" class="paper-link" target="_blank">📄 Paper Link</a>
+                        </article>
+                        <article class="publication">
+                            <h4>3. Margin-Aware Adaptive-Weighted-Loss for Deep Learning Based Imbalanced Data Classification [First Author]</h4>
+                            <p><strong>IEEE Transactions on Artificial Intelligence · May 11, 2023</strong></p>
+                            <p>To address class imbalance and overfitting, we propose a novel loss function, <span class="keyword">Margin-Aware Adaptive-Weighted (MAAW) Loss</span>. It uses <span class="keyword">large margin softmax</span> for intra-class compactness and inter-class separability, and a <span class="keyword">dynamically weighted loss</span> that adapts based on inverse class frequencies in each minibatch. It also accounts for hard-to-train samples using confidence scores. The framework proved effective on <strong>CIFAR-10, Fashion-MNIST, HAM10000, and APTOS-2019 BD</strong> datasets.</p>
+                            <a href="https://ieeexplore.ieee.org/abstract/document/10123019/" class="paper-link" target="_blank">📄 Paper Link</a>
+                        </article>
                     </div>
-                    <div class="university-item">
-                        <div class="uni-icon"><i class="fas fa-book-open"></i></div>
-                        <h3>Coursework</h3>
-                        <p>Covered core subjects like <span class="keyword">OS, DBMS, AI, & NLP</span>. Honours specializations included <span class="honours-subjects">Machine Learning, Big Data Analytics, Network Security, Bioinformatics, and Optimization Techniques</span>.</p>
-                    </div>
-                    <div class="university-item">
-                        <div class="uni-icon"><i class="fas fa-microscope"></i></div>
-                        <h3>Undergraduate Research</h3>
-                        <p>Worked as a researcher at the <span class="keyword">CMATER Lab</span> under Prof. Ram Sarkar, focusing on <span class="keyword">Deep Learning and Computer Vision</span>, leading to several publications.</p>
-                    </div>
-                    <div class="university-item">
-                        <div class="uni-icon"><i class="fas fa-users"></i></div>
-                        <h3>Extracurriculars</h3>
-                        <p>Participated in social activities and took a major role in organizing an <span class="keyword">NLP-themed hackathon</span>, including curating and preparing the dataset.</p>
-                        <a href="https://www.researchgate.net/publication/384720339_COMSYS_Hackathon-II_Igniting_AI_Minds" class="uni-link" target="_blank">📄 Hackathon Report</a>
-                    </div>
-                </div>
-            </section>
+                <p>📌 I was also invited to the <strong>prestigious IndoML Symposium 2024 at IIT Bombay</strong>, where I interacted with researchers and professors across the globe.</p>
+                </section>
 
-            <section id="hackathons" class="glass-card">
-                <h2><i class="fas fa-trophy"></i> Contests and Hackathons</h2>
-                <p>I actively participate in contests and hackathons to immerse myself in diverse challenges, interact with industry professionals, and collaborate with people from different backgrounds. To date, I have taken part in numerous hackathons and contests, securing top positions in nine of them across both international and national stages.</p>
-                <div class="hackathon-list detailed-hackathons">
-                    <article class="hackathon-item category-contest">
-                        <h4>🥉 2nd Runner Up at Hacknosis 2024 (National): Sustainable MedTech Hackathon</h4>
-                        <p>Developed <span class="keyword">CarbonSage</span>: a comprehensive solution for calculating, tracking, and reducing carbon emissions from devices and data usage by offering actionable insights, real-time monitoring, and optimized code alternatives. The solution used a <span class="keyword">Multi-Agent System</span> for snippet-by-snippet emission count and code analysis.</p>
-                        <a href="https://hacknosis.hackerearth.com/" target="_blank">🔗 Hackathon Link</a>
-                    </article>
-                    <article class="hackathon-item category-cv">
-                        <h4>🏆 Winner at Nx EVOS 2024 (International): Building Enterprise Scale Video Application</h4>
-                        <p>Built an enterprise-scale <span class="keyword">video object detection pipeline</span> for retail. It processes CCTV feeds in real-time, computes product dwell times, tracks purchases, and uses the <span class="keyword">Apriori algorithm</span> to recommend optimal product placement. The project was a <span class="keyword">Multimodal System</span> that involved complex <span class="keyword">Signal-to-NLP Transformation</span>.</p>
-                        <a href="https://nxevos.hackerearth.com/" target="_blank">🔗 Hackathon Link</a>
-                    </article>
-                    <article class="hackathon-item category-nlp">
-                        <h4>🥇 Best Project by LlamaIndex at Advanced RAG Hackathon LabLab.AI 2024 (International)</h4>
-                        <p>Developed an industry-grade <span class="keyword">CRM platform</span> that ingests product reviews, breaks them into trigger phrases using smaller LLMs, and routes them through a <span class="keyword">hierarchical retrieval system</span> to generate and assign actionable tickets to specialized teams. The solution was built as a complex Multi-Agentic Platform.</p>
-                        <a href="https://lablab.ai/u/@debasmit2020/clwhv1t3j000h2afdj968jzph" target="_blank">🔗 Project Link</a>
-                    </article>
-                    <article class="hackathon-item category-nlp">
-                        <h4>🏆 Winner at KnackToHack Hackathon by M&G Global Services 2024 (National)</h4>
-                        <p>Developed a <span class="keyword">Safe Guard for LLM chatbots</span> that automates rule creation from regulations like the <span class="keyword">EU AI Act</span> and <span class="keyword">GDPR</span>, forming a knowledge graph for <span class="keyword">hierarchical RAG</span> to ensure compliance with organizational Safe AI practices.</p>
-                        <a href="https://drive.google.com/file/d/1s1P0pADh6CGlmtXZG44OKW5fGHw0kB8B/view" target="_blank">📄 Proof</a>
-                    </article>
-                    <article class="hackathon-item category-cv">
-                        <h4>🥉 2nd Runner Up at App-A-Thon 2.0 by Awiros and Intel (2023)</h4>
-                        <p>Developed a real-time <span class="keyword">rider safety application</span> for two-wheelers using <span class="keyword">pose detection</span>, deployed with <span class="keyword">MLOps</span> on the <span class="keyword">World’s First Computer Vision OS</span>, <span class="keyword">AWIROS</span>.</p>
-                        <a href="https://drive.google.com/file/d/1tsqAA7evyOVRmhiW9SoR8wpaDzkL-RxS/view" target="_blank">📄 Proof</a>
-                    </article>
-                    <article class="hackathon-item category-contest">
-                        <h4>🏆 Winner at DataFest @ Integration 2023 by ISI Kolkata</h4>
-                        <p>Won a Kaggle contest with two challenges: a <span class="keyword">signal processing</span> task to identify whale sounds and an <span class="keyword">estimation task</span> to count tigers from paw prints.</p>
-                        <a href="https://credsverse.com/credentials/09e8ccef-0e12-4055-996f-4a74cc1ec837" target="_blank">📄 Credential</a>
-                    </article>
-                </div>
-            </section>
+                <section id="experience-education" class="glass-card">
+                    <h2><i class="fas fa-chart-line"></i> Career & Education</h2>
+                    <div class="timeline">
+                        <!-- Work Experience Item 1 -->
+                        <div class="timeline-item">
+                            <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
+                            <div class="timeline-content category-nlp">
+                                <h3>Software Engineer (June 2024 – Present)</h3>
+                                <h4>Deutsche India Pvt. Ltd. – Risk, Finance & Treasury</h4>
+                                <ul>
+                                    <li>Key role in <span class="keyword">Cloud and DevOps technology</span> using <span class="keyword">GCP</span>, <span class="keyword">Kubernetes</span>, <span class="keyword">SRE tools</span>, and <span class="keyword">CI/CD pipelines</span>.</li>
+                                    <li>Serve as a key person in the department’s <span class="keyword">innovation track</span>, working on complex <span class="keyword">Explainable AI pipelines</span>.</li>
+                                    <li>Built an <span class="keyword">NLP/LLM pipeline</span> to explain financial movements of derivatives.</li>
+                                    <li>Developing an <span class="keyword">LLM-powered platform</span> to analyze Cloud log and metric anomalies.</li>
+                                    <li>Represented department’s AI contributions at internal forums.</li>
+                                </ul>
+                                <a href="https://drive.google.com/file/d/1fDIe6jxrXvUuXhNfUr11RorrYoGwJjgn/view?usp=drive_link" class="proof-link" target="_blank">📄 Certificate</a>
+                            </div>
+                        </div>
+                         <!-- Work Experience Item 2 -->
+                        <div class="timeline-item">
+                            <div class="timeline-icon"><i class="fas fa-user-graduate"></i></div>
+                            <div class="timeline-content category-nlp">
+                                <h3>Summer Intern (2023)</h3>
+                                <h4>Deutsche India Pvt. Ltd. – Technology, Data & Innovation</h4>
+                                <ul>
+                                    <li>Built an <span class="keyword">end-to-end chatbot</span> with <span class="keyword">Flask</span> (backend) and <span class="keyword">React</span> (frontend) on the top of an extremely noisy and unstructured internal data stream.</li>
+                                    <li>Implemented <span class="keyword">context search algorithms</span> and <span class="keyword">dynamic knowledge base expansion</span> on the top of language models running with limited resources. </li>
+                                </ul>
+                                <a href="https://drive.google.com/file/d/11UQK7p0Yb0NT8yfrmtl4YzUOvnwRGQY7/view?usp=drive_link" class="proof-link" target="_blank">📄 Certificate</a>
+                            </div>
+                        </div>
+                        <!-- Education Item -->
+                        <div class="timeline-item">
+                            <div class="timeline-icon"><i class="fas fa-university"></i></div>
+                            <div class="timeline-content">
+                                <h3>Jadavpur University, Kolkata (2024)</h3>
+                                <p><strong>Bachelors of Computer Science and Engineering</strong> with <strong>9.23 CGPA (9.30 SGPA)</strong> - First Class Distinction with Honours.</p>
+                                <ul>
+                                    <li>Secured <strong>4th merit position</strong> in the department. <a href="https://drive.google.com/file/d/1LSaTNxYV3z-DMX039-wadxn-GK2bf3D8/view?usp=drive_link" target="_blank">📄 Transcript</a></li>
+                                    <li>Worked at <strong>CMATER Lab</strong> under <strong>Prof. Ram Sarkar</strong> as an undergraduate researcher.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="university-days" class="glass-card">
+                    <h2><i class="fas fa-graduation-cap"></i> University Days</h2>
+                    <div class="university-grid">
+                        <div class="university-item">
+                            <div class="uni-icon"><i class="fas fa-medal"></i></div>
+                            <h3>Academics & Rank</h3>
+                            <p>Completed B.E. in Computer Science and Engineering with <span class="keyword">9.23 CGPA (9.30 SGPA)</span>, earning <span class="keyword">First Class Distinction with Honours</span> and securing the <span class="keyword">4th merit position</span> in the department.</p>
+                            <a href="https://drive.google.com/file/d/1LSaTNxYV3z-DMX039-wadxn-GK2bf3D8/view?usp=drive_link" class="uni-link" target="_blank">📄 Certificate</a>
+                        </div>
+                        <div class="university-item">
+                            <div class="uni-icon"><i class="fas fa-book-open"></i></div>
+                            <h3>Coursework</h3>
+                            <p>Covered core subjects like <span class="keyword">OS, DBMS, AI, & NLP</span>. Honours specializations included <span class="honours-subjects">Machine Learning, Big Data Analytics, Network Security, Bioinformatics, and Optimization Techniques</span>.</p>
+                        </div>
+                        <div class="university-item">
+                            <div class="uni-icon"><i class="fas fa-microscope"></i></div>
+                            <h3>Undergraduate Research</h3>
+                            <p>Worked as a researcher at the <span class="keyword">CMATER Lab</span> under Prof. Ram Sarkar, focusing on <span class="keyword">Deep Learning and Computer Vision</span>, leading to several publications.</p>
+                        </div>
+                        <div class="university-item">
+                            <div class="uni-icon"><i class="fas fa-users"></i></div>
+                            <h3>Extracurriculars</h3>
+                            <p>Participated in social activities and took a major role in organizing an <span class="keyword">NLP-themed hackathon</span>, including curating and preparing the dataset.</p>
+                            <a href="https://www.researchgate.net/publication/384720339_COMSYS_Hackathon-II_Igniting_AI_Minds" class="uni-link" target="_blank">📄 Hackathon Report</a>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="hackathons" class="glass-card">
+                    <h2><i class="fas fa-trophy"></i> Contests and Hackathons</h2>
+                    <p>I actively participate in contests and hackathons to immerse myself in diverse challenges, interact with industry professionals, and collaborate with people from different backgrounds. To date, I have taken part in numerous hackathons and contests, securing top positions in nine of them across both international and national stages.</p>
+                    <div class="hackathon-list detailed-hackathons">
+                        <article class="hackathon-item category-contest">
+                            <h4>🥉 2nd Runner Up at Hacknosis 2024 (National): Sustainable MedTech Hackathon</h4>
+                            <p>Developed <span class="keyword">CarbonSage</span>: a comprehensive solution for calculating, tracking, and reducing carbon emissions from devices and data usage by offering actionable insights, real-time monitoring, and optimized code alternatives. The solution used a <span class="keyword">Multi-Agent System</span> for snippet-by-snippet emission count and code analysis.</p>
+                            <a href="https://hacknosis.hackerearth.com/" target="_blank">🔗 Hackathon Link</a>
+                        </article>
+                        <article class="hackathon-item category-cv">
+                            <h4>🏆 Winner at Nx EVOS 2024 (International): Building Enterprise Scale Video Application</h4>
+                            <p>Built an enterprise-scale <span class="keyword">video object detection pipeline</span> for retail. It processes CCTV feeds in real-time, computes product dwell times, tracks purchases, and uses the <span class="keyword">Apriori algorithm</span> to recommend optimal product placement. The project was a <span class="keyword">Multimodal System</span> that involved complex <span class="keyword">Signal-to-NLP Transformation</span>.</p>
+                            <a href="https://nxevos.hackerearth.com/" target="_blank">🔗 Hackathon Link</a>
+                        </article>
+                        <article class="hackathon-item category-nlp">
+                            <h4>🥇 Best Project by LlamaIndex at Advanced RAG Hackathon LabLab.AI 2024 (International)</h4>
+                            <p>Developed an industry-grade <span class="keyword">CRM platform</span> that ingests product reviews, breaks them into trigger phrases using smaller LLMs, and routes them through a <span class="keyword">hierarchical retrieval system</span> to generate and assign actionable tickets to specialized teams. The solution was built as a complex Multi-Agentic Platform.</p>
+                            <a href="https://lablab.ai/u/@debasmit2020/clwhv1t3j000h2afdj968jzph" target="_blank">🔗 Project Link</a>
+                        </article>
+                        <article class="hackathon-item category-nlp">
+                            <h4>🏆 Winner at KnackToHack Hackathon by M&G Global Services 2024 (National)</h4>
+                            <p>Developed a <span class="keyword">Safe Guard for LLM chatbots</span> that automates rule creation from regulations like the <span class="keyword">EU AI Act</span> and <span class="keyword">GDPR</span>, forming a knowledge graph for <span class="keyword">hierarchical RAG</span> to ensure compliance with organizational Safe AI practices.</p>
+                            <a href="https://drive.google.com/file/d/1s1P0pADh6CGlmtXZG44OKW5fGHw0kB8B/view" target="_blank">📄 Proof</a>
+                        </article>
+                        <article class="hackathon-item category-cv">
+                            <h4>🥉 2nd Runner Up at App-A-Thon 2.0 by Awiros and Intel (2023)</h4>
+                            <p>Developed a real-time <span class="keyword">rider safety application</span> for two-wheelers using <span class="keyword">pose detection</span>, deployed with <span class="keyword">MLOps</span> on the <span class="keyword">World’s First Computer Vision OS</span>, <span class="keyword">AWIROS</span>.</p>
+                            <a href="https://drive.google.com/file/d/1tsqAA7evyOVRmhiW9SoR8wpaDzkL-RxS/view" target="_blank">📄 Proof</a>
+                        </article>
+                        <article class="hackathon-item category-contest">
+                            <h4>🏆 Winner at DataFest @ Integration 2023 by ISI Kolkata</h4>
+                            <p>Won a Kaggle contest with two challenges: a <span class="keyword">signal processing</span> task to identify whale sounds and an <span class="keyword">estimation task</span> to count tigers from paw prints.</p>
+                            <a href="https://credsverse.com/credentials/09e8ccef-0e12-4055-996f-4a74cc1ec837" target="_blank">📄 Credential</a>
+                        </article>
+                    </div>
+                </section>
 
 
-            <section id="school" class="glass-card">
-                <h2><i class="fas fa-school"></i> Academic Foundations</h2>
-                <div class="school-achievements">
-                    <div class="achievement">
-                        <h4>Grade 10 Board Exam (2018)</h4>
-                        <p>Scored <span class="keyword">97.4%</span>, ranked <span class="keyword">8th in the board</span> (~1M students). <a href="https://drive.google.com/file/d/1BiTXI2TpJUUZ0JpUlRsDkh596cP6X9rZ/view?usp=drive_link" target="_blank">📄 Marksheet</a></p>
+                <section id="school" class="glass-card">
+                    <h2><i class="fas fa-school"></i> Academic Foundations</h2>
+                    <div class="school-achievements">
+                        <div class="achievement">
+                            <h4>Grade 10 Board Exam (2018)</h4>
+                            <p>Scored <span class="keyword">97.4%</span>, ranked <span class="keyword">8th in the board</span> (~1M students). <a href="https://drive.google.com/file/d/1BiTXI2TpJUUZ0JpUlRsDkh596cP6X9rZ/view?usp=drive_link" target="_blank">📄 Marksheet</a></p>
+                        </div>
+                        <div class="achievement">
+                            <h4>Grade 12 Board Exam (2020)</h4>
+                            <p>Scored <span class="keyword">97.2%</span>, ranked <span class="keyword">13th in the board</span> (~760k students). <a href="https://drive.google.com/file/d/1k7lorYvqLpfHlubOEgSsNXC-wcfxmUkx/view?usp=drive_link" target="_blank">📄 Marksheet</a></p>
+                        </div>
+                        <div class="achievement">
+                            <h4>Competitive Exams (2020)</h4>
+                            <p>WBJEE Rank: <span class="keyword">139th</span> (Open Category) among <strong>75k candidates</strong>.</p>
+                        </div>
                     </div>
-                    <div class="achievement">
-                        <h4>Grade 12 Board Exam (2020)</h4>
-                        <p>Scored <span class="keyword">97.2%</span>, ranked <span class="keyword">13th in the board</span> (~760k students). <a href="https://drive.google.com/file/d/1k7lorYvqLpfHlubOEgSsNXC-wcfxmUkx/view?usp=drive_link" target="_blank">📄 Marksheet</a></p>
-                    </div>
-                    <div class="achievement">
-                        <h4>Competitive Exams (2020)</h4>
-                        <p>WBJEE Rank: <span class="keyword">139th</span> (Open Category) among <strong>75k candidates</strong>.</p>
-                    </div>
-                </div>
-            </section>
+                </section>
 
-            <section id="skills" class="glass-card">
-                <h2><i class="fas fa-cogs"></i> Skills and Certifications</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3>Languages</h3>
-                        <p><span class="keyword-skill">C</span>, <span class="keyword-skill">C++</span>, <span class="keyword-skill">Java</span>, <span class="keyword-skill">Python</span>, <span class="keyword-skill">JavaScript</span>, <span class="keyword-skill">MATLAB</span>, <span class="keyword-skill">ASM</span>, <span class="keyword-skill">VHDL</span></p>
+                <section id="skills" class="glass-card">
+                    <h2><i class="fas fa-cogs"></i> Skills and Certifications</h2>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3>Languages</h3>
+                            <p><span class="keyword-skill">C</span>, <span class="keyword-skill">C++</span>, <span class="keyword-skill">Java</span>, <span class="keyword-skill">Python</span>, <span class="keyword-skill">JavaScript</span>, <span class="keyword-skill">MATLAB</span>, <span class="keyword-skill">ASM</span>, <span class="keyword-skill">VHDL</span></p>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Software & Tools</h3>
+                            <p><span class="keyword-skill">TensorFlow</span>, <span class="keyword-skill">PyTorch</span>, <span class="keyword-skill">CUDA</span>, <span class="keyword-skill">OpenCV</span>, <span class="keyword-skill">LangChain</span>, <span class="keyword-skill">Docker</span>, <span class="keyword-skill">Git</span>, <span class="keyword-skill">Flask</span>, <span class="keyword-skill">AWS</span></p>
+                        </div>
+                         <div class="skill-category">
+                            <h3>Core CS & Honours</h3>
+                            <p><span class="keyword-skill">OS</span>, <span class="keyword-skill">Networks</span>, <span class="keyword-skill">DBMS</span>, <span class="keyword-skill">AI</span>, <span class="keyword-skill">NLP</span>, <span class="keyword-skill">Machine Learning</span>, <span class="keyword-skill">Big Data</span>, <span class="keyword-skill">Network Security</span>, <span class="keyword-skill">Bioinformatics</span></p>
+                        </div>
                     </div>
-                    <div class="skill-category">
-                        <h3>Software & Tools</h3>
-                        <p><span class="keyword-skill">TensorFlow</span>, <span class="keyword-skill">PyTorch</span>, <span class="keyword-skill">CUDA</span>, <span class="keyword-skill">OpenCV</span>, <span class="keyword-skill">LangChain</span>, <span class="keyword-skill">Docker</span>, <span class="keyword-skill">Git</span>, <span class="keyword-skill">Flask</span>, <span class="keyword-skill">AWS</span></p>
+                    <h3>Certifications</h3>
+                    <div class="certifications">
+                        <a href="https://www.coursera.org/account/accomplishments/verify/VS5CQW8QUNHB?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" target="_blank"><i class="fas fa-award"></i> Machine Learning – Coursera</a>
+                        <a href="https://coursera.org/share/74d5bab412990ad313ccb65c399f7a39" target="_blank"><i class="fas fa-award"></i> Neural Networks and Deep Learning – Coursera</a>
+                        <a href="https://coursera.org/share/8f767f28d4929867dec72864966adf55" target="_blank"><i class="fas fa-award"></i> Hyperparameter Tuning, Regularization, and Optimization – Coursera</a>
                     </div>
-                     <div class="skill-category">
-                        <h3>Core CS & Honours</h3>
-                        <p><span class="keyword-skill">OS</span>, <span class="keyword-skill">Networks</span>, <span class="keyword-skill">DBMS</span>, <span class="keyword-skill">AI</span>, <span class="keyword-skill">NLP</span>, <span class="keyword-skill">Machine Learning</span>, <span class="keyword-skill">Big Data</span>, <span class="keyword-skill">Network Security</span>, <span class="keyword-skill">Bioinformatics</span></p>
-                    </div>
-                </div>
-                <h3>Certifications</h3>
-                <div class="certifications">
-                    <a href="https://www.coursera.org/account/accomplishments/verify/VS5CQW8QUNHB?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" target="_blank"><i class="fas fa-award"></i> Machine Learning – Coursera</a>
-                    <a href="https://coursera.org/share/74d5bab412990ad313ccb65c399f7a39" target="_blank"><i class="fas fa-award"></i> Neural Networks and Deep Learning – Coursera</a>
-                    <a href="https://coursera.org/share/8f767f28d4929867dec72864966adf55" target="_blank"><i class="fas fa-award"></i> Hyperparameter Tuning, Regularization, and Optimization – Coursera</a>
-                </div>
-            </section>
+                </section>
 
-            <section id="hobbies" class="glass-card">
-                <h2><i class="fas fa-heart"></i> Hobbies & Interests</h2>
-                <div class="hobbies-list">
-                    <div class="hobby-item">
-                        <div class="hobby-icon"><i class="fas fa-music"></i></div>
-                        <p>Playing piano and Indian key-based instruments. Trained in <span class="keyword">Indian Classical</span> music and <span class="keyword">Rabindra Sangeet</span>.</p>
+                <section id="hobbies" class="glass-card">
+                    <h2><i class="fas fa-heart"></i> Hobbies & Interests</h2>
+                    <div class="hobbies-list">
+                        <div class="hobby-item">
+                            <div class="hobby-icon"><i class="fas fa-music"></i></div>
+                            <p>Playing piano and Indian key-based instruments. Trained in <span class="keyword">Indian Classical</span> music and <span class="keyword">Rabindra Sangeet</span>.</p>
+                        </div>
+                        <div class="hobby-item">
+                            <div class="hobby-icon"><i class="fas fa-book-reader"></i></div>
+                            <p>Reading Indian, especially <span class="keyword">Bengali Novels</span>.</p>
+                        </div>
+                        <div class="hobby-item">
+                            <div class="hobby-icon"><i class="fas fa-lightbulb"></i></div>
+                            <p>Collaborating with juniors and seniors to build new, <span class="keyword">innovative solutions</span>.</p>
+                        </div>
                     </div>
-                    <div class="hobby-item">
-                        <div class="hobby-icon"><i class="fas fa-book-reader"></i></div>
-                        <p>Reading Indian, especially <span class="keyword">Bengali Novels</span>.</p>
-                    </div>
-                    <div class="hobby-item">
-                        <div class="hobby-icon"><i class="fas fa-lightbulb"></i></div>
-                        <p>Collaborating with juniors and seniors to build new, <span class="keyword">innovative solutions</span>.</p>
-                    </div>
-                </div>
-            </section>
-        </main>
+                </section>
+            </main>
 
-        <footer>
-            <p>&copy; 2025 Debasmit Roy. All rights reserved.</p>
-        </footer>
+            <footer>
+                <p>&copy; 2025 Debasmit Roy. All rights reserved.</p>
+            </footer>
+        </div>
     </div>
+
+    <div id="dynamic-summary" class="summary-box"></div>
+
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const sections = document.querySelectorAll('section[id]');
             const navLinks = document.querySelectorAll('.scroll-nav a');
+            const summaryBox = document.getElementById('dynamic-summary');
+            let summaryTimeout;
 
-            const observer = new IntersectionObserver((entries) => {
+            const summaries = {
+                'about': "Software Engineer in DevOps, Cloud & AI, with A* publications and hackathon wins in Generative AI.",
+                'research': "Expertise in Knowledge Distillation & Vision-Language Models, now studying Network Pruning in ViTs.",
+                'experience-education': "Software Engineer at Deutsche Bank, an alum of Jadavpur University with a 9.23 CGPA (4th rank).",
+                'university-days': "Graduated with 9.23 CGPA (4th rank), researched at CMATER Lab, and organized an NLP hackathon.",
+                'hackathons': "Secured top positions in 9+ national & international hackathons, with wins in GenAI and video analytics.",
+                'school': "Achieved top board ranks: 8th in Grade 10 (97.4%) and 13th in Grade 12 (97.2%).",
+                'skills': "Skilled in Python, C++, TensorFlow, PyTorch, GCP, and core areas like AI, NLP, and Big Data.",
+                'hobbies': "Trained in Indian Classical music, enjoys playing the piano, and reads Bengali novels."
+            };
+
+            const summaryObserver = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
-                        navLinks.forEach(link => {
-                            link.classList.remove('active');
-                            if (link.getAttribute('href').substring(1) === entry.target.id) {
-                                link.classList.add('active');
-                            }
-                        });
+                        const sectionId = entry.target.id;
+                        if (summaries[sectionId]) {
+                            summaryBox.innerHTML = summaries[sectionId];
+                            summaryBox.classList.add('visible');
+                        }
                     }
                 });
-            }, { threshold: 0.5 });
+            }, { threshold: 0.2 });
+
+            const navObserver = new IntersectionObserver((entries) => {
+                let latestEntry;
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        if (!latestEntry || entry.intersectionRatio > latestEntry.intersectionRatio) {
+                            latestEntry = entry;
+                        }
+                    }
+                });
+
+                if (latestEntry) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href').substring(1) === latestEntry.target.id) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            }, { threshold: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0] });
 
             sections.forEach(section => {
-                observer.observe(section);
+                navObserver.observe(section);
+                summaryObserver.observe(section);
             });
         });
     </script>

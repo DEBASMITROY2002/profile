@@ -2,11 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --primary-color: #c77b79; /* Brighter Muted Red/Brown */
     --secondary-color: #268bd2; /* Muted Blue */
     --background-color: #fdf6e3; /* Creamy, aged paper */
-    --card-background: rgba(255, 252, 242, 0.75); /* Semi-transparent paper */
+    --card-background: rgba(255, 252, 242, 0.6); /* More transparent paper */
     --text-color: #333a3d; /* Darker Slate */
     --heading-color: #002b36; /* Darkest Blue/Black */
     --shadow-color: rgba(133, 68, 66, 0.25); /* Glow from primary color */
@@ -37,9 +41,14 @@ body {
     overflow-x: hidden;
 }
 
+.page-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
 .container {
     max-width: 1100px;
-    margin: auto;
+    margin-left: 250px; /* Adjust based on nav width */
     padding: 2rem;
 }
 
@@ -489,18 +498,26 @@ header {
 }
 
 /* --- Scroll-nav Slider --- */
+/* --- Scroll-nav Slider --- */
 .scroll-nav {
     position: fixed;
-    left: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 230px;
+    background: var(--background-color);
+    padding: 2rem 0;
+    border-right: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center items vertically */
+    z-index: 100;
 }
 
 .scroll-nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0 0 0 15px; /* Added left margin */
 }
 
 .scroll-nav li {
@@ -546,6 +563,58 @@ header {
     font-size: 16px;
     font-weight: bold;
     color: var(--heading-color);
+}
+
+/* --- Dynamic Summary Box --- */
+.summary-box {
+    padding: 20px 15px;
+    color: var(--text-color);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    transition: opacity 0.5s ease, visibility 0.5s ease, height 0.5s ease;
+    font-style: italic;
+    text-align: left;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    backdrop-filter: none;
+    position: relative;
+    width: auto;
+}
+
+.summary-box.visible {
+    opacity: 1;
+    visibility: visible;
+    height: 120px; /* Adjust height as needed */
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+    border-top: 1px solid var(--border-color);
+}
+
+footer p {
+    margin: 0;
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--secondary-color);
+    transition: color 0.3s ease, border-bottom-color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
 }
 
 /* --- Animations --- */
@@ -643,5 +712,13 @@ header {
 
     .scroll-nav {
         display: none; /* Hide scroll nav on smaller screens */
+    }
+
+    .summary-box {
+        width: 90%;
+        right: 5%;
+        top: 10%;
+        transform: translateY(0);
+        opacity: 0.9;
     }
 }
