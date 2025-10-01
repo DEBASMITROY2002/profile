@@ -1,5 +1,5 @@
 /* --- Fonts & Global Styles --- */
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 html {
@@ -7,14 +7,14 @@ html {
 }
 
 :root {
-    --primary-color: #c77b79; /* Brighter Muted Red/Brown */
-    --secondary-color: #268bd2; /* Muted Blue */
-    --background-color: #fdf6e3; /* Creamy, aged paper */
-    --card-background: rgba(255, 252, 242, 0.6); /* More transparent paper */
-    --text-color: #333a3d; /* Darker Slate */
-    --heading-color: #002b36; /* Darkest Blue/Black */
-    --shadow-color: rgba(133, 68, 66, 0.25); /* Glow from primary color */
-    --border-color: rgba(133, 68, 66, 0.3); /* Faint border */
+    --primary-color: #333; 
+    --secondary-color: #555; 
+    --background-color: #fff; 
+    --card-background: rgba(248, 249, 250, 0.9);
+    --text-color: #212529; 
+    --heading-color: #000; 
+    --shadow-color: rgba(0, 0, 0, 0.08); 
+    --border-color: rgba(0, 0, 0, 0.1); 
 
     /* Category Colors */
     --nlp-color: #9b59b6;
@@ -32,11 +32,11 @@ html {
 }
 
 body {
-    font-family: 'Lora', serif;
+    font-family: 'Inter', sans-serif;
     line-height: 1.8;
     margin: 0;
     padding: 0;
-    background: var(--background-color) url('https://www.transparenttextures.com/patterns/subtle-grunge.png');
+    background: var(--background-color);
     color: var(--text-color);
     overflow-x: hidden;
 }
@@ -54,7 +54,7 @@ body {
 
 h1, h2, h3, h4 {
     color: var(--heading-color);
-    font-family: 'Playfair Display', serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 700;
 }
 
@@ -100,11 +100,9 @@ ul {
 /* --- Glassmorphism Card --- */
 .glass-card {
     background: var(--card-background);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border-radius: 8px;
+    border-radius: 0; /* Boxy cards */
     border: 1px solid var(--border-color);
-    box-shadow: 0 8px 32px 0 var(--shadow-color);
+    box-shadow: 0 4px 12px var(--shadow-color);
     padding: 2.5rem;
     margin-bottom: 2.5rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -113,7 +111,7 @@ ul {
 
 .glass-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 12px 40px var(--shadow-color);
+    box-shadow: 0 8px 20px var(--shadow-color);
 }
 
 
@@ -135,17 +133,16 @@ header {
 .profile-pic {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
+    border-radius: 0; /* Boxy profile picture */
     border: 4px solid var(--primary-color);
     margin-bottom: 1.5rem;
-    box-shadow: 0 0 25px var(--shadow-color);
-    filter: sepia(20%);
+    box-shadow: 0 0 15px var(--shadow-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .profile-pic:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 35px var(--shadow-color);
+    box-shadow: 0 0 25px var(--shadow-color);
 }
 
 .header-text h1 {
