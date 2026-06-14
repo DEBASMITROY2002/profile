@@ -381,57 +381,50 @@ ul {
 
 /* ----- Keywords ----- */
 .keyword {
-    display: inline-block;
-    background: var(--keyword-bg);
-    color: var(--keyword-text);
-    padding: 1px 8px;
-    border-radius: 4px;
-    font-size: 0.88em;
-    font-weight: 600;
-    border: 1px solid var(--keyword-border);
-    transition: all var(--transition-speed);
+    display: inline;
+    background: transparent;
+    color: inherit;
+    padding: 0;
+    border-radius: 0;
+    font-size: inherit;
+    font-weight: inherit;
+    border: 0;
+    transition: none;
 }
 
 .keyword:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 2px 6px rgba(55, 48, 163, 0.12);
+    transform: none;
 }
 
 .kw-past {
-    background: var(--kw-past-bg);
-    color: var(--kw-past-text);
-    border-color: #d1d5db;
+    background: transparent;
+    color: inherit;
+    border-color: transparent;
 }
 
 .kw-present {
-    background: var(--kw-present-bg);
-    color: var(--kw-present-text);
-    border-color: #93c5fd;
-    animation: pulsePresent 3s infinite ease-in-out;
+    background: transparent;
+    color: inherit;
+    border-color: transparent;
 }
 
 .kw-future {
-    background: var(--kw-future-bg);
-    color: var(--kw-future-text);
-    border-color: #a7f3d0;
-}
-
-@keyframes pulsePresent {
-    0%, 100% { box-shadow: 0 0 0 rgba(30, 64, 175, 0); }
-    50% { box-shadow: 0 0 8px rgba(30, 64, 175, 0.15); }
+    background: transparent;
+    color: inherit;
+    border-color: transparent;
 }
 
 /* ----- Badge ----- */
 .badge {
-    display: inline-block;
-    background: var(--accent);
-    color: #fff;
-    font-size: 0.7rem;
-    font-weight: 600;
-    padding: 2px 8px;
-    border-radius: 100px;
+    display: inline;
+    background: transparent;
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    padding: 0;
+    border-radius: 0;
     vertical-align: middle;
-    margin-left: 6px;
+    margin-left: 0;
 }
 
 /* =============================================
@@ -580,7 +573,7 @@ ul {
     border: 1px solid var(--card-border);
     border-radius: var(--radius);
     overflow: hidden;
-    transition: box-shadow var(--transition-speed), transform var(--transition-speed);
+    transition: transform var(--transition-speed);
     cursor: pointer;
 }
 
@@ -601,7 +594,6 @@ ul {
 .pub-card:hover,
 .hack-card:hover,
 .research-interest-card:hover {
-    box-shadow: 0 6px 24px var(--card-shadow);
     transform: translateY(-2px);
 }
 
@@ -616,22 +608,22 @@ ul {
 }
 
 .pub-year {
-    font-size: 0.75rem;
-    font-weight: 700;
-    background: var(--accent);
-    color: #fff;
-    padding: 2px 10px;
-    border-radius: 100px;
+    font-size: inherit;
+    font-weight: inherit;
+    background: transparent;
+    color: inherit;
+    padding: 0;
+    border-radius: 0;
 }
 
 .pub-venue {
-    font-size: 0.75rem;
-    font-weight: 600;
-    background: #f3f4f6;
-    color: #374151;
-    padding: 2px 10px;
-    border-radius: 100px;
-    border: 1px solid #e5e7eb;
+    font-size: inherit;
+    font-weight: inherit;
+    background: transparent;
+    color: inherit;
+    padding: 0;
+    border-radius: 0;
+    border: 0;
 }
 
 .pub-card-header h4 {
@@ -749,13 +741,12 @@ ul {
     object-fit: cover;
     scroll-snap-align: start;
     cursor: pointer;
-    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+    transition: transform var(--transition-speed);
     border: 1px solid var(--card-border);
 }
 
 .image-scroll-container img:hover {
     transform: scale(1.03);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* =============================================
@@ -769,11 +760,10 @@ ul {
     border-radius: var(--radius);
     padding: 1.75rem;
     margin-bottom: 1.25rem;
-    transition: box-shadow var(--transition-speed), transform var(--transition-speed);
+    transition: transform var(--transition-speed);
 }
 
 .edu-card:hover {
-    box-shadow: 0 6px 24px var(--card-shadow);
     transform: translateY(-2px);
 }
 
@@ -923,8 +913,8 @@ ul {
 }
 
 .skill-group .keyword {
-    font-size: 0.8rem;
-    padding: 2px 7px;
+    font-size: inherit;
+    padding: 0;
 }
 
 /* Certifications */
@@ -962,11 +952,11 @@ ul {
     background: #fff;
     border: 1px solid var(--card-border);
     border-radius: var(--radius-sm);
-    transition: box-shadow var(--transition-speed);
+    transition: transform var(--transition-speed);
 }
 
 .hobby-card:hover {
-    box-shadow: 0 4px 16px var(--card-shadow);
+    transform: translateY(-1px);
 }
 
 .hobby-icon {
@@ -1150,7 +1140,6 @@ ul {
     cursor: pointer;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.2);
 }
 
 .mobile-overlay {

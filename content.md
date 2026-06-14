@@ -23,7 +23,7 @@ Undergraduate Researcher, Guide: Prof. Ram Sarkar
 • Developed a tool for visualizing feature evolution and redundancy across layers and epochs, enabling systematic
 analysis of representational overlap and pruning effects.
 Research Publications
-Background-Invariant Independence-Guided Multi-head Attention Network for Skin Lesion Classification First Author | International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI 2025, A Ranked)
+Background-Invariant Independence-Guided Multi-head Attention Network for Skin Lesion Classification First Author | International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI 2025)
 • Proposed BIIGMA-Net, addressing visual artifacts, illumination bias, and class imbalance in dermatological imaging through
 independence-driven attention.
 • Introduced Multi-head Independence-Guided Channel Attention (MICA) using Hilbert–Schmidt Independence Criterion
