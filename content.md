@@ -99,7 +99,7 @@ Security, Bioinformatics, Optimization Techniques
 Certifications: Machine Learning (Coursera), Neural Networks and Deep Learning (Coursera), Hyperparameter Tuning,
 Regularization, and Optimization (Coursera)
 Hobbies & Interests
-• Playing piano and Indian key-based instruments; trained in Indian Classical music and Rabindra Sangeet
+• Playing piano and Indian key-based instruments; trained in Indian Classical music and Rabindra Sangeet 
 • Reading Indian literature, especially Bengali Novels
 
 
