@@ -170,6 +170,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const leftPanel = document.getElementById('leftPanel');
 
+    function triggerInitialMobileButtonHint() {
+        const isMobile = window.matchMedia('(max-width: 768px)').matches;
+        if (!isMobile) return;
+
+        mobileBtn.classList.add('attention-ping');
+
+        // Stop the hint automatically so it only attracts initial attention.
+        setTimeout(() => {
+            mobileBtn.classList.remove('attention-ping');
+        }, 4500);
+    }
+
     function openMobileMenu() {
         leftPanel.classList.add('open');
         mobileOverlay.classList.add('active');
@@ -181,6 +193,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     mobileBtn.addEventListener('click', () => {
+        mobileBtn.classList.remove('attention-ping');
         if (leftPanel.classList.contains('open')) {
             closeMobileMenu();
         } else {
@@ -189,4 +202,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     mobileOverlay.addEventListener('click', closeMobileMenu);
+    triggerInitialMobileButtonHint();
 });
