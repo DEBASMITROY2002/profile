@@ -164,6 +164,11 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileBtn.innerHTML = '<i class="fas fa-bars"></i>';
     document.body.appendChild(mobileBtn);
 
+    const mobileHint = document.createElement('div');
+    mobileHint.className = 'mobile-menu-hint';
+    mobileHint.textContent = '← More About Me ✨';
+    document.body.appendChild(mobileHint);
+
     const mobileOverlay = document.createElement('div');
     mobileOverlay.className = 'mobile-overlay';
     document.body.appendChild(mobileOverlay);
@@ -175,10 +180,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!isMobile) return;
 
         mobileBtn.classList.add('attention-ping');
+        mobileHint.classList.add('active');
 
         // Stop the hint automatically so it only attracts initial attention.
         setTimeout(() => {
             mobileBtn.classList.remove('attention-ping');
+            mobileHint.classList.remove('active');
         }, 4500);
     }
 
@@ -194,6 +201,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     mobileBtn.addEventListener('click', () => {
         mobileBtn.classList.remove('attention-ping');
+        mobileHint.classList.remove('active');
         if (leftPanel.classList.contains('open')) {
             closeMobileMenu();
         } else {
