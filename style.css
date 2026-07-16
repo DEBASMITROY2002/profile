@@ -761,18 +761,22 @@ ul {
     gap: 0.4rem;
     margin-top: 0.75rem;
     padding: 0.45rem 1rem;
-    background: var(--accent);
-    color: #fff;
+    background: #9ca3af;
+    color: #111827;
+    opacity: 0.65;
     font-size: 0.8rem;
     font-weight: 600;
+    border: 1px solid #9ca3af;
     border-radius: 100px;
-    transition: background var(--transition-speed);
+    transition: background var(--transition-speed), opacity var(--transition-speed), color var(--transition-speed);
 }
 
 .paper-link:hover,
 .proof-link:hover {
-    background: var(--accent-hover);
-    color: #fff;
+    background: #6b7280;
+    border-color: #6b7280;
+    color: #f9fafb;
+    opacity: 0.78;
 }
 
 /* ----- Horizontally Scrollable Images ----- */
