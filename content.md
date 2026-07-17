@@ -7,6 +7,9 @@ Bachelor of Engineering in Computer Science and Engineering 2020 – 2024
 • Honours: Machine Learning, Big Data Analytics, Network Security, Bioinformatics, Optimization Techniques
 • Core: Engg. Math, Operating Systems, DBMS, Artificial Intelligence, NLP, Algorithms, Computer Networks
 Research Interests
+Current Research Area: Efficiency and robustness in large-scale machine learning systems under Professor Michael Orshansky.
+Incoming PhD: Fall 2026, The University of Texas at Austin, Department of Electrical & Computer Engineering, DICE Track
+(expected graduation: 2031)
 Expertise & Experience: Representation learning, model compression, attention-based and Vision–Language architectures,
 self-supervised learning, robustness under data imbalance, redundancy analysis in CNNs/Transformers, and graph-based attention
 mechanisms for medical imaging
@@ -52,7 +55,7 @@ notable geometric shifts in the latent space of penultimate-layer features and s
 Prof. Ram Sarkar)
 ( continued on next page )
 Industry Experience
-Deutsche Bank Software Engineer – Risk, Finance & Treasury Jun 2024 – Present
+Deutsche Bank Software Engineer – Risk, Finance & Treasury Jun 2024 – Jul 2026
 Pune, India
 • Worked on Cloud infrastructure and DevOps using GCP, Kubernetes, CI/CD pipelines, and SRE tools to maintain
 high-availability financial systems.
