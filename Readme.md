@@ -88,7 +88,7 @@ The overall framework is found to be effective when evaluated on two widely used
    * Implemented **context search algorithms** and **dynamic knowledge base expansion** using cutting-edge NLP models, resulting in highly efficient information retrieval from internal company database and pages.
      📄 [Proof](https://drive.google.com/file/d/11UQK7p0Yb0NT8yfrmtl4YzUOvnwRGQY7/view?usp=drive_link)
 
-2. **June 2024 – Present, Deutsche India Private Limited TDI Division, Full Time Software Engineer**
+2. **July 2024 – Present, Deutsche India Private Limited TDI Division, Full Time Software Engineer**
 
    * Key role: working on **Cloud and DevOps technology** inside **Risk, Finance & Treasury department**.
    * Tech-stack includes **GCP Platform, Kubernetes, SRE-tools, and CI/CD Pipelines**.
