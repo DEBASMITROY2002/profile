@@ -535,8 +535,8 @@ ul {
 
 @media (max-width: 700px) {
     .intro-logo-banner {
-        overflow-x: auto;
-        overflow-y: hidden;
+        overflow-x: auto !important;
+        overflow-y: hidden !important;
     }
 
     .intro-logo-track {
@@ -687,6 +687,10 @@ ul {
     overflow: hidden;
     transition: transform var(--transition-speed);
     cursor: pointer;
+}
+
+.hack-card .pub-card-images {
+    display: none;
 }
 
 .philosophy-list {
@@ -1345,4 +1349,371 @@ ul {
 .mobile-overlay.active {
     opacity: 1;
     pointer-events: auto;
+}
+
+/* =============================================
+   SINGLE-PAGE MINIMAL LAYOUT
+   ============================================= */
+body {
+    display: block;
+    background: #fff;
+    color: #242424;
+}
+
+.left-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: none !important;
+    transition: none;
+    width: 250px;
+    height: 100vh;
+    padding: 2rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: hidden;
+    background: #292929;
+}
+
+.profile-section {
+    grid-area: profile;
+    margin: 0;
+    text-align: center;
+}
+
+.profile-pic-wrapper {
+    width: 112px;
+    height: 112px;
+    margin-bottom: 0.5rem;
+}
+
+.signature-overlay,
+.profile-location,
+.qr-code-wrapper,
+.left-footer {
+    display: none;
+}
+
+.profile-name-bengali,
+.profile-phonetic {
+    display: block;
+}
+
+.profile-name {
+    font-size: 1.65rem;
+}
+
+.profile-tagline {
+    font-size: 0.82rem;
+    margin: 0;
+}
+
+.social-links {
+    justify-content: center;
+    margin: 0 0 0.25rem;
+}
+
+.download-cv-btn,
+.sidebar-chat-btn {
+    width: auto;
+    margin: 0;
+    padding: 0.45rem 0.8rem;
+    font-size: 0.75rem;
+}
+
+.sidebar-chat-btn {
+    justify-content: center;
+}
+
+.download-cv-btn {
+    align-self: center;
+}
+
+.section-nav {
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.nav-item {
+    width: 100%;
+    padding: 0.5rem 0.65rem;
+    border-radius: 2px;
+    color: #bdbdbd;
+    font-size: 0.78rem;
+}
+
+.nav-item.active,
+.nav-item:hover {
+    background: transparent;
+    color: #fff;
+}
+
+.nav-item.active::before {
+    display: none;
+}
+
+.right-panel {
+    width: calc(100% - 250px);
+    margin-left: 250px;
+    margin-right: 0;
+    padding: 3rem max(2rem, calc((100% - 940px) / 2)) 5rem;
+    overflow: visible;
+}
+
+.content-section,
+.content-section.active {
+    display: block;
+    margin: 0 0 2.5rem;
+    scroll-margin-top: 1.5rem;
+    animation: none;
+}
+
+.content-section h2 {
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.content-section h3 {
+    margin: 1.25rem 0 0.55rem;
+    font-size: 1.15rem;
+}
+
+.intro-text,
+.research-overview,
+.edu-card,
+.pub-card,
+.hack-card,
+.research-interest-card,
+.misc-block {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #e8e8e8;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.intro-text,
+.research-overview {
+    padding: 0;
+    text-align: left;
+}
+
+.intro-text p,
+.research-overview p {
+    font-size: 1rem;
+    line-height: 1.65;
+    margin-bottom: 0.55rem;
+}
+
+.content-section p {
+    text-align: justify;
+}
+
+.intro-logo-banner {
+    border: 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    border-radius: 0;
+    background: transparent;
+    margin: 1rem 0;
+    overflow: visible;
+}
+
+.intro-logo-track {
+    overflow: visible;
+}
+
+.intro-logo-group {
+    justify-content: center;
+    width: 100%;
+}
+
+.timeline {
+    padding-left: 1.4rem;
+}
+
+.timeline-item {
+    padding-left: 1.3rem;
+    padding-bottom: 0.9rem;
+}
+
+.card-list {
+    gap: 0;
+}
+
+.pub-card,
+.hack-card,
+.research-interest-card {
+    cursor: default;
+}
+
+.pub-card-header {
+    padding: 0.8rem 0;
+}
+
+.pub-card-header h4 {
+    font-size: 1rem;
+}
+
+.pub-card-images,
+.pub-card[data-expanded="true"] .pub-card-images,
+.hack-card[data-expanded="true"] .pub-card-images,
+.research-interest-card[data-expanded="true"] .pub-card-images {
+    max-height: none;
+    border-top: 0;
+}
+
+.image-scroll-container {
+    padding: 0 0 1.2rem;
+}
+
+.pub-card-images {
+    max-height: 0 !important;
+    overflow: hidden;
+    border-top: 0 !important;
+}
+
+.pub-card-meta {
+    align-items: center;
+}
+
+.pub-card-meta .paper-link {
+    margin: 0 0 0 0.35rem;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    color: var(--accent);
+    opacity: 1;
+    font-size: 0.82rem;
+}
+
+.collapse-all-btn,
+.collapse-all-btn-wrapper {
+    display: none;
+}
+
+.edu-card {
+    padding: 0.8rem 0;
+    margin-bottom: 0;
+    gap: 1rem;
+}
+
+.edu-card-icon {
+    display: none;
+}
+
+.edu-card-header {
+    align-items: flex-start;
+}
+
+.edu-card-header h3 {
+    font-size: 1.05rem;
+}
+
+.misc-block {
+    padding: 0.8rem 0;
+}
+
+.skill-group,
+.hobby-card {
+    background: transparent;
+    border: 1px solid #e5e5e5;
+    border-radius: 2px;
+}
+
+.mobile-menu-btn,
+.mobile-menu-hint,
+.mobile-overlay {
+    display: none !important;
+}
+
+@media (max-width: 768px) {
+    .left-panel {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 1.25rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "profile profile"
+            "social social"
+            "download chat"
+            "nav nav";
+        gap: 0.9rem;
+        overflow: visible;
+    }
+
+    .profile-section {
+        grid-area: profile;
+    }
+
+    .social-links {
+        grid-area: social;
+    }
+
+    .download-cv-btn {
+        grid-area: download;
+        justify-self: stretch;
+    }
+
+    .sidebar-chat-btn {
+        grid-area: chat;
+        justify-self: stretch;
+    }
+
+    .section-nav {
+        grid-area: nav;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .nav-item {
+        width: auto;
+    }
+
+    .right-panel {
+        width: min(100% - 2rem, 940px);
+        margin: 0 auto;
+        padding: 2.25rem 0 4rem;
+    }
+
+    .intro-logo-banner {
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    .intro-logo-track {
+        width: max-content;
+    }
+
+    .intro-logo-group {
+        width: max-content;
+    }
+}
+
+@media (max-width: 640px) {
+    .left-panel {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .download-cv-btn,
+    .sidebar-chat-btn {
+        justify-self: stretch;
+        justify-content: center;
+    }
+
+    .right-panel {
+        width: min(100% - 2rem, 940px);
+        padding-top: 2.25rem;
+    }
+
+    .content-section h2 {
+        font-size: 1.55rem;
+    }
 }
